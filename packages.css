@@ -1,0 +1,165 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+.nav-item.dropdown .nav-link::after {
+  display: none;
+}
+
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+/* Transparent background */
+.dropdown-menu {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  padding: 10px;
+}
+
+/* Dropdown links styling */
+.dropdown-item {
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.934);
+}
+
+/* Hero Section */
+.packages-hero {
+  background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470") no-repeat center center/cover;
+  height: 100vh;
+  margin-top: 56px; /* pushes hero below fixed navbar */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Overlay to darken image for better text visibility */
+.packages-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.packages-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.packages-hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.packages-hero p {
+  font-size: 1.3rem;
+  margin-top: 15px;
+}
+
+/* Packages Section */
+.package-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.package-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.package-card .card-body {
+  text-align: center;
+}
+
+.package-card .btn {
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+/* Make card titles uppercase */
+.package-card .card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Smooth zoom effect on image */
+.package-card img {
+  transition: transform 0.5s ease; /* smooth animation */
+}
+
+.package-card:hover img {
+  transform: scale(1.05); /* zoom slightly */
+}
+/* Booking Section with Background Image */
+.booking-section {
+  background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
+  position: relative;
+  padding: 80px 0;
+}
+
+.booking-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6); /* dark overlay */
+}
+.booking-section h2 {
+  color: white;
+  font-weight: bold;
+}
+
+.booking-section .container {
+  position: relative;
+  z-index: 2; /* keep form above overlay */
+}
+
+.booking-form {
+  background: rgba(255, 255, 255, 0.9); /* semi-transparent white */
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.booking-form input,
+.booking-form select {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.booking-form button {
+  border-radius: 25px;
+  padding: 10px 30px;
+}
+.booking-form button:hover {
+  background-color: #0056b3;
+}
+

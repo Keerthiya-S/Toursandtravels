@@ -1,0 +1,27 @@
+.nav-item.dropdown .nav-link::after {
+  display: none;
+}
+
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+/* Transparent background */
+.dropdown-menu {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  padding: 10px;
+}
+
+/* Dropdown links styling */
+.dropdown-item {
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.934);
+}

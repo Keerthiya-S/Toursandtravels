@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelMate - Maldives</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="packages.css">
+  <style>
+    .place-img {
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .package-card {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🌍 TravelMate</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <!-- Packages Dropdown (hover, no arrow) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link active" href="packages.html">Packages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html">India</a></li>
+            <li><a class="dropdown-item" href="switzerland.html">Switzerland</a></li>
+            <li><a class="dropdown-item" href="maldives.html">Maldives</a></li>
+            <li><a class="dropdown-item" href="dubai.html">Dubai</a></li>
+            <li><a class="dropdown-item" href="thailand.html">Thailand</a></li>
+            <li><a class="dropdown-item" href="singapore.html">Singapore</a></li>
+            <li><a class="dropdown-item" href="paris.html">Paris</a></li>
+            <li><a class="dropdown-item" href="italy.html">Italy</a></li>
+            <li><a class="dropdown-item" href="london">London</a></li>
+            <li><a class="dropdown-item" href="usa.html">USA</a></li>
+          </ul>
+        </li>
+
+        <!-- Other Nav Links -->
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <header class="packages-hero text-white text-center d-flex align-items-center">
+    <div class="container">
+      <h1 class="display-4">Explore Maldives</h1>
+      <p class="lead">Experience the tropical paradise like never before!</p>
+    </div>
+  </header>
+
+  <!-- Maldives Packages Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Male City -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/male.jpg" class="card-img-top" alt="Male City">
+            <div class="card-body">
+              <h5 class="card-title">Male City (1 Day)</h5>
+              <p class="card-text">Capital city sightseeing.</p>
+              <a href="#male" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="male">
+            <div class="card card-body">
+              <h6>Male City Itinerary</h6>
+              <ul>
+                <li>Visit Maldives National Museum</li>
+                <li>Hukuru Miskiy (Old Friday Mosque)</li>
+                <li>Local markets & cafes</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/national_museum.jpg" class="place-img w-100" alt="National Museum"></div>
+                <div class="col-6"><img src="images/friday_mosque.jpg" class="place-img w-100" alt="Friday Mosque"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Maafushi Island -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/maafushi.jpg" class="card-img-top" alt="Maafushi">
+            <div class="card-body">
+              <h5 class="card-title">Maafushi Island (2 Days)</h5>
+              <p class="card-text">Island exploration & water sports.</p>
+              <a href="#maafushi" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="maafushi">
+            <div class="card card-body">
+              <h6>Maafushi Itinerary</h6>
+              <ul>
+                <li>Snorkeling & Diving</li>
+                <li>Island hopping</li>
+                <li>Local beaches & cafes</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/snorkeling.jpg" class="place-img w-100" alt="Snorkeling"></div>
+                <div class="col-6"><img src="images/beach.jpg" class="place-img w-100" alt="Beach"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Addu Atoll -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/addu.jpg" class="card-img-top" alt="Addu Atoll">
+            <div class="card-body">
+              <h5 class="card-title">Addu Atoll (2 Days)</h5>
+              <p class="card-text">Relaxing resorts & scenic views.</p>
+              <a href="#addu" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="addu">
+            <div class="card card-body">
+              <h6>Addu Atoll Itinerary</h6>
+              <ul>
+                <li>Visit Gan Island & beaches</li>
+                <li>Water sports & scuba diving</li>
+                <li>Resort leisure activities</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/gan_island.jpg" class="place-img w-100" alt="Gan Island"></div>
+                <div class="col-6"><img src="images/resort.jpg" class="place-img w-100" alt="Resort"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-dark text-center py-3">
+    <p>&copy; 2025 TravelMate. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
