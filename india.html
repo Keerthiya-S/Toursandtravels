@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Incredible India Tour</title>
+  <title>TravelMate - India</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="packages.css">
   <style>
     .place-img {
-      height: 200px;
+      height: 150px;
       object-fit: cover;
-      border-radius: 10px;
+      border-radius: 5px;
     }
-    
+    .package-card {
+      margin-bottom: 30px;
+    }
   </style>
-  <link rel="stylesheet" href="india.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">🌍 TravelMate</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -62,169 +65,181 @@
   </div>
 </nav>
 
-
-  <div class="container py-5">
-    <h1 class="text-center mb-4 pt-4">Incredible India Tour Packages</h1>
-    <p class="text-center">Explore India’s rich culture, history, and beauty with our curated packages.</p>
-
-    <div class="row g-4">
-
-      <!-- Delhi -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="images/delhi.jpg" class="card-img-top" alt="Delhi">
-          <div class="card-body">
-            <h5 class="card-title">Delhi (2 Days)</h5>
-            <p class="card-text">Experience the capital city with its iconic monuments.</p>
-            <a href="#delhi" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
-          </div>
-        </div>
-        <div class="collapse mt-3" id="delhi">
-          <div class="card card-body">
-            <h6>Delhi Itinerary</h6>
-            <ul>
-              <li>Day 1: Red Fort, India Gate, Lotus Temple</li>
-              <li>Day 2: Qutub Minar, Akshardham Temple, Chandni Chowk</li>
-            </ul>
-            <div class="row g-2">
-              <div class="col-6"><img src="images/redfort.jpg" class="place-img w-100" alt="Red Fort"></div>
-              <div class="col-6"><img src="images/qutub.jpg" class="place-img w-100" alt="Qutub Minar"></div>
-              <div class="col-6"><img src="images/indiagate.jpg" class="place-img w-100" alt="India Gate"></div>
-              <div class="col-6"><img src="images/akshardham.jpg" class="place-img w-100" alt="Lotus Temple"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Agra -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="images/agra.jpg" class="card-img-top" alt="Agra">
-          <div class="card-body">
-            <h5 class="card-title">Agra (2 Days)</h5>
-            <p class="card-text">Home of the Taj Mahal & Mughal wonders.</p>
-            <a href="#agra" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
-          </div>
-        </div>
-        <div class="collapse mt-3" id="agra">
-          <div class="card card-body">
-            <h6>Agra Itinerary</h6>
-            <ul>
-              <li>Day 1: Taj Mahal, Agra Fort</li>
-              <li>Day 2: Mehtab Bagh, Fatehpur Sikri</li>
-            </ul>
-            <div class="row g-2">
-              <div class="col-6"><img src="images/tajmahal.jpg" class="place-img w-100" alt="Taj Mahal"></div>
-              <div class="col-6"><img src="images/agrafort.jpg" class="place-img w-100" alt="Agra Fort"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Jaipur -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="images/jaipur.jpg" class="card-img-top" alt="Jaipur">
-          <div class="card-body">
-            <h5 class="card-title">Jaipur (2 Days)</h5>
-            <p class="card-text">Discover the Pink City’s palaces and forts.</p>
-            <a href="#jaipur" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
-          </div>
-        </div>
-        <div class="collapse mt-3" id="jaipur">
-          <div class="card card-body">
-            <h6>Jaipur Itinerary</h6>
-            <ul>
-              <li>Day 1: Amer Fort, Hawa Mahal</li>
-              <li>Day 2: City Palace, Jantar Mantar</li>
-            </ul>
-            <div class="row g-2">
-              <div class="col-6"><img src="images/amerfort.jpg" class="place-img w-100" alt="Amer Fort"></div>
-              <div class="col-6"><img src="images/hawamahal.jpg" class="place-img w-100" alt="Hawa Mahal"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Kerala -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="images/kerala.jpg" class="card-img-top" alt="Kerala">
-          <div class="card-body">
-            <h5 class="card-title">Kerala (3 Days)</h5>
-            <p class="card-text">Backwaters, tea gardens & beaches.</p>
-            <a href="#kerala" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
-          </div>
-        </div>
-        <div class="collapse mt-3" id="kerala">
-          <div class="card card-body">
-            <h6>Kerala Itinerary</h6>
-            <ul>
-              <li>Day 1: Alleppey Backwaters</li>
-              <li>Day 2: Munnar Tea Plantations</li>
-              <li>Day 3: Kovalam Beach</li>
-            </ul>
-            <div class="row g-2">
-              <div class="col-6"><img src="images/alleppey.jpg" class="place-img w-100" alt="Alleppey"></div>
-              <div class="col-6"><img src="images/munnar.jpg" class="place-img w-100" alt="Munnar"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Puri, Odisha -->
-<div class="col-md-4">
-  <div class="card">
-    <img src="images/puri.jpg" class="card-img-top" alt="Puri">
-    <div class="card-body">
-      <h5 class="card-title">Puri, Odisha (3 Days)</h5>
-      <p class="card-text">Temple town & beach city.</p>
-      <a href="#puri" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+  <!-- Hero Section -->
+  <header class="packages-hero text-white text-center d-flex align-items-center"
+          style="background-image:url('images/india_hero.jpg');">
+    <div class="container">
+      <h1 class="display-4">Explore Incredible India</h1>
+      <p class="lead">From culture to history, discover the beauty of India!</p>
     </div>
-  </div>
-  <div class="collapse mt-3" id="puri">
-    <div class="card card-body">
-      <h6>Puri Itinerary</h6>
-      <ul>
-        <li>Day 1: Jagannath Temple & Puri Beach</li>
-        <li>Day 2: Konark Sun Temple</li>
-        <li>Day 3: Chilika Lake & Local Sightseeing</li>
-      </ul>
-      <div class="row g-2">
-        <div class="col-6"><img src="images/puribeach.jpg" class="place-img w-100" alt="Jagannath Temple"></div>
-        <div class="col-6"><img src="images/konark.jpg" class="place-img w-100" alt="Konark Sun Temple"></div>
-      </div>
-    </div>
-  </div>
-</div>
+  </header>
 
-      <!-- Tamil Nadu -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="images/tamilnadu.jpeg" class="card-img-top" alt="Tamil Nadu">
-          <div class="card-body">
-            <h5 class="card-title">Tamil Nadu (3 Days)</h5>
-            <p class="card-text">Temples, culture & natural beauty.</p>
-            <a href="#tamilnadu" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+  <!-- India Packages Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Delhi -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/delhi.jpg" class="card-img-top" alt="Delhi">
+            <div class="card-body">
+              <h5 class="card-title">Delhi (2 Days)</h5>
+              <p class="card-text">Experience the capital’s monuments & vibrant markets.</p>
+              <a href="#delhi" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
           </div>
-        </div>
-        <div class="collapse mt-3" id="tamilnadu">
-          <div class="card card-body">
-            <h6>Tamil Nadu Itinerary</h6>
-            <ul>
-              <li>Day 1: Meenakshi Amman Temple (Madurai)</li>
-              <li>Day 2: Brihadeeswara Temple (Thanjavur)</li>
-              <li>Day 3: Ooty Hills & Botanical Gardens</li>
-            </ul>
-            <div class="row g-2">
-              <div class="col-6"><img src="images/meenakshi.jpg" class="place-img w-100" alt="Meenakshi Temple"></div>
-              <div class="col-6"><img src="images/ooty.jpg" class="place-img w-100" alt="Ooty Hills"></div>
+          <div class="collapse mt-3" id="delhi">
+            <div class="card card-body">
+              <h6>Delhi Itinerary</h6>
+              <ul>
+                <li>Day 1: Red Fort, India Gate, Lotus Temple</li>
+                <li>Day 2: Qutub Minar, Akshardham, Chandni Chowk</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/redfort.jpg" class="place-img w-100" alt="Red Fort"></div>
+                <div class="col-6"><img src="images/qutub.jpg" class="place-img w-100" alt="Qutub Minar"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
+        <!-- Agra -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/agra.jpg" class="card-img-top" alt="Agra">
+            <div class="card-body">
+              <h5 class="card-title">Agra (2 Days)</h5>
+              <p class="card-text">Visit the majestic Taj Mahal & Mughal heritage sites.</p>
+              <a href="#agra" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="agra">
+            <div class="card card-body">
+              <h6>Agra Itinerary</h6>
+              <ul>
+                <li>Day 1: Taj Mahal, Agra Fort</li>
+                <li>Day 2: Mehtab Bagh, Fatehpur Sikri</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/tajmahal.jpg" class="place-img w-100" alt="Taj Mahal"></div>
+                <div class="col-6"><img src="images/agrafort.jpg" class="place-img w-100" alt="Agra Fort"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jaipur -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/jaipur.jpg" class="card-img-top" alt="Jaipur">
+            <div class="card-body">
+              <h5 class="card-title">Jaipur (2 Days)</h5>
+              <p class="card-text">Explore forts, palaces & heritage of the Pink City.</p>
+              <a href="#jaipur" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="jaipur">
+            <div class="card card-body">
+              <h6>Jaipur Itinerary</h6>
+              <ul>
+                <li>Day 1: Amer Fort, Hawa Mahal</li>
+                <li>Day 2: City Palace, Jantar Mantar</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/amerfort.jpg" class="place-img w-100" alt="Amer Fort"></div>
+                <div class="col-6"><img src="images/hawamahal.jpg" class="place-img w-100" alt="Hawa Mahal"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kerala -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/kerala.jpg" class="card-img-top" alt="Kerala">
+            <div class="card-body">
+              <h5 class="card-title">Kerala (3 Days)</h5>
+              <p class="card-text">Backwaters, tea gardens & serene beaches.</p>
+              <a href="#kerala" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="kerala">
+            <div class="card card-body">
+              <h6>Kerala Itinerary</h6>
+              <ul>
+                <li>Day 1: Alleppey Backwaters</li>
+                <li>Day 2: Munnar Tea Plantations</li>
+                <li>Day 3: Kovalam Beach</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/alleppey.webp" class="place-img w-100" alt="Alleppey"></div>
+                <div class="col-6"><img src="images/munnar.avif" class="place-img w-100" alt="Munnar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Puri -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/puri.jpg" class="card-img-top" alt="Puri">
+            <div class="card-body">
+              <h5 class="card-title">Puri, Odisha (3 Days)</h5>
+              <p class="card-text">Sacred temples & golden beaches.</p>
+              <a href="#puri" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="puri">
+            <div class="card card-body">
+              <h6>Puri Itinerary</h6>
+              <ul>
+                <li>Day 1: Jagannath Temple & Puri Beach</li>
+                <li>Day 2: Konark Sun Temple</li>
+                <li>Day 3: Chilika Lake</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/puribeach.jpg" class="place-img w-100" alt="Puri Beach"></div>
+                <div class="col-6"><img src="images/konark.jpg" class="place-img w-100" alt="Konark Sun Temple"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tamil Nadu -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/tamilnadu.jpeg" class="card-img-top" alt="Tamil Nadu">
+            <div class="card-body">
+              <h5 class="card-title">Tamil Nadu (3 Days)</h5>
+              <p class="card-text">Temples, hills & cultural treasures.</p>
+              <a href="#tamilnadu" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="tamilnadu">
+            <div class="card card-body">
+              <h6>Tamil Nadu Itinerary</h6>
+              <ul>
+                <li>Day 1: Meenakshi Temple (Madurai)</li>
+                <li>Day 2: Brihadeeswara Temple (Thanjavur)</li>
+                <li>Day 3: Ooty Hills & Botanical Garden</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/meenakshi.jpg" class="place-img w-100" alt="Meenakshi Temple"></div>
+                <div class="col-6"><img src="images/ooty.jpg" class="place-img w-100" alt="Ooty"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-dark text-center py-3">
+    <p>&copy; 2025 TravelMate. All Rights Reserved.</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

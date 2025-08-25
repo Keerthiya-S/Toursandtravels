@@ -41,7 +41,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 5px;
 }
-
+.navbar{
+  background: linear-gradient(to right, rgba(237, 106, 89, 0.85) 0%, rgba(147, 178, 211, 0.85) 100%);
+}
 /* Transparent background */
 .dropdown-menu {
   background: rgba(0, 0, 0, 0.7);
@@ -116,3 +118,17 @@ footer {
   color: black;
   padding: 20px 0;
 }
+/* .kenburns-top-right {
+	-webkit-animation: kenburns-top-right 5s ease-out both;
+	        animation: kenburns-top-right 5s ease-out both;
+}
+@keyframes kenburns-top-right {
+  0% {    
+            transform: scale(1) translate(0, 0);   
+            transform-origin: 84% 16%;
+  }
+  100% {
+            transform: scale(1.25) translate(20px, -15px);
+            transform-origin: right top;
+  }
+} */

@@ -1,0 +1,272 @@
+
+
+/* =======================
+   Navbar & Dropdown
+======================= */
+/* Hide default Bootstrap dropdown arrow */
+.nav-item.dropdown .nav-link::after {
+  display: none;
+}
+
+/* Show dropdown on hover (grid style) */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+/* Navbar background gradient */
+.navbar {
+  background: linear-gradient(to right, rgba(237, 106, 89, 0.85) 0%, rgba(147, 178, 211, 0.85) 100%);
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  padding: 10px;
+}
+
+/* Dropdown links */
+.dropdown-item {
+  color: #fff;
+  transition: background 0.3s;
+}
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.934);
+  color: #000;
+}
+
+
+
+/* About Header (hero-like) */
+/* About Header */
+.about-header {
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+  height: 100vh; /* shorter than hero for better layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.about-header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+}
+
+.about-content {
+  position: relative;
+  z-index: 2;
+}
+
+.about-header h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 1.3rem;
+}
+.who-we-are img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.who-we-are img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* =======================
+   Why Choose Us Timeline
+======================= */
+.why-choose-us {
+  background: #fff;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.timeline-icon {
+  background: #fff;
+  border: 4px solid #ff7e5f;
+  color: #ff7e5f;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+}
+
+.timeline-content {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+  .timeline-item {
+    flex-direction: row;
+    text-align: left;
+  }
+  .timeline-item:nth-child(even) {
+    flex-direction: row;
+  }
+  .timeline-number {
+    display: none;
+  }
+}
+
+/* Mission & Vision */
+.mission-vision {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+  color: white;
+  height: 80vh;
+
+  display: flex;
+  align-items: center;  /* vertical center */
+  justify-content: center; /* horizontal center */
+  text-align: center;   /* center text */
+}
+
+.mission-vision .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* dark overlay */
+  z-index: 1;
+}
+
+.mission-vision .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/* Team Section */
+.team {
+  padding: 60px 20px;
+  text-align: center;
+}
+.team-section {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+  color: white; /* make text visible on dark bg */
+}
+
+.team-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* overlay */
+  z-index: 1;
+}
+
+.team-section .container {
+  position: relative;
+  z-index: 2; /* keep text above overlay */
+}
+
+.team h2 {
+  margin-bottom: 40px;
+  
+}
+
+.team-card {
+  border: none;
+  transition: transform 0.3s;
+  background-color: transparent;
+  
+}
+.team-card .team-img {
+  width: 100px;       /* reduce size */
+  height: 100px;      /* fixed height */
+  object-fit: cover;  /* crop properly */
+  border-radius: 50%; /* circular image */
+  display: block;
+  margin: 15px auto 0; /* center inside card */
+ border: 2px solid black;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+.left-hover:hover {
+  transform: scale(1.05); /* only left card image zoom */
+  transition: transform 0.4s ease;
+}
+.card-body i {
+  color: #007bff;
+  font-size: 18px;
+}
+.card-body i:hover {
+  color: #f7f9fa;
+}
+.card-body h5{
+    color: white;
+}
+.card-body p{
+    color: white;
+}
+/* =======================
+   Footer
+======================= */
+footer {
+  background: #e3e8ed;
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+}
