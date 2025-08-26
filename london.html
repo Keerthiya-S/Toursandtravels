@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelMate - London</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="packages.css"/>
+  <style>
+    .place-img { height: 160px; object-fit: cover; border-radius: 8px; }
+    .package-card { margin-bottom: 30px; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🌍 TravelMate</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active" href="packages.html">Packages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="india.html">India</a></li>
+              <li><a class="dropdown-item" href="switzerland.html">Switzerland</a></li>
+              <li><a class="dropdown-item" href="maldives.html">Maldives</a></li>
+              <li><a class="dropdown-item" href="dubai.html">Dubai</a></li>
+              <li><a class="dropdown-item" href="thailand.html">Thailand</a></li>
+              <li><a class="dropdown-item" href="singapore.html">Singapore</a></li>
+              <li><a class="dropdown-item" href="paris.html">Paris</a></li>
+              <li><a class="dropdown-item" href="italy.html">Italy</a></li>
+              <li><a class="dropdown-item" href="london.html">London</a></li>
+              <li><a class="dropdown-item" href="usa.html">USA</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="packages-hero text-white text-center d-flex align-items-center"
+          style="background-image:url('images/london_hero.jpg');">
+    <div class="container">
+      <h1 class="display-4">Discover London</h1>
+      <p class="lead">Big Ben, Buckingham Palace, Tower Bridge & vibrant culture.</p>
+    </div>
+  </header>
+
+  <!-- London Packages -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Westminster & Big Ben -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/bigben.jpg" class="card-img-top" alt="Big Ben">
+            <div class="card-body">
+              <h5 class="card-title">Westminster & Big Ben (1 Day)</h5>
+              <p class="card-text">Iconic Parliament, Big Ben & Westminster Abbey.</p>
+              <a href="#westminster" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="westminster">
+            <div class="card card-body">
+              <h6>Itinerary</h6>
+              <ul>
+                <li>Tour of Westminster Abbey</li>
+                <li>Big Ben & Houses of Parliament</li>
+                <li>Walk along the River Thames</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/parliament.jpg" class="place-img w-100" alt="Parliament"></div>
+                <div class="col-6"><img src="images/thames.jpg" class="place-img w-100" alt="River Thames"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Buckingham Palace -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/buckingham.webp" class="card-img-top" alt="Buckingham Palace">
+            <div class="card-body">
+              <h5 class="card-title">Royal London (1 Day)</h5>
+              <p class="card-text">Buckingham Palace & Changing of the Guard.</p>
+              <a href="#buckingham" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="buckingham">
+            <div class="card card-body">
+              <h6>Itinerary</h6>
+              <ul>
+                <li>Buckingham Palace exterior tour</li>
+                <li>Changing of the Guard ceremony</li>
+                <li>Walk through St. James's Park</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/exterior.jpg" class="place-img w-100" alt="Buckingham exterior"></div>
+                <div class="col-6"><img src="images/stjamespark.jpg" class="place-img w-100" alt="St. James Park"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tower of London & Tower Bridge -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/towerbridge.jpg" class="card-img-top" alt="Tower Bridge">
+            <div class="card-body">
+              <h5 class="card-title">Tower of London & Tower Bridge</h5>
+              <p class="card-text">Historic fortress & London’s iconic bridge.</p>
+              <a href="#tower" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="tower">
+            <div class="card card-body">
+              <h6>Itinerary</h6>
+              <ul>
+                <li>Explore Tower of London</li>
+                <li>See the Crown Jewels</li>
+                <li>Walk across Tower Bridge</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/toweroflondon.jpg" class="place-img w-100" alt="Tower of London"></div>
+                <div class="col-6"><img src="images/bridge_walk.jpg" class="place-img w-100" alt="Tower Bridge Walk"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-dark text-center py-3">
+    <p>&copy; 2025 TravelMate. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

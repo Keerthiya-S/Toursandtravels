@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelMate - Paris</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="packages.css"/>
+  <style>
+    .place-img { height: 160px; object-fit: cover; border-radius: 8px; }
+    .package-card { margin-bottom: 30px; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background: linear-gradient(to Left, rgba(237, 106, 89, 0.85) 0%, rgba(2, 51, 104, 0.85) 100%);">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🌍 TravelMate</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active" href="packages.html">Packages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="india.html">India</a></li>
+              <li><a class="dropdown-item" href="switzerland.html">Switzerland</a></li>
+              <li><a class="dropdown-item" href="maldives.html">Maldives</a></li>
+              <li><a class="dropdown-item" href="dubai.html">Dubai</a></li>
+              <li><a class="dropdown-item" href="thailand.html">Thailand</a></li>
+              <li><a class="dropdown-item" href="singapore.html">Singapore</a></li>
+              <li><a class="dropdown-item" href="paris.html">Paris</a></li>
+              <li><a class="dropdown-item" href="italy.html">Italy</a></li>
+              <li><a class="dropdown-item" href="london.html">London</a></li>
+              <li><a class="dropdown-item" href="usa.html">USA</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="packages-hero text-white text-center d-flex align-items-center"
+          style="background-image:url('images/paris_hero.jpg');">
+    <div class="container">
+      <h1 class="display-4">Discover Paris</h1>
+      <p class="lead">Eiffel Tower, Louvre, Seine River & timeless romance.</p>
+    </div>
+  </header>
+
+  <!-- Paris Packages -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Eiffel Tower & Seine Cruise -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/eiffel.jpg" class="card-img-top" alt="Eiffel Tower">
+            <div class="card-body">
+              <h5 class="card-title">Eiffel Tower & Seine River (1 Day)</h5>
+              <p class="card-text">Iconic Paris views & romantic cruise.</p>
+              <a href="#eiffel" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="eiffel">
+            <div class="card card-body">
+              <h6>Itinerary</h6>
+              <ul>
+                <li>Eiffel Tower (Summit or 2nd floor)</li>
+                <li>Champ de Mars & Trocadéro photo spots</li>
+                <li>Seine River Cruise in the evening</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/eiffel_night.jpg" class="place-img w-100" alt="Eiffel at Night"></div>
+                <div class="col-6"><img src="images/seine_cruise.jpg" class="place-img w-100" alt="Seine Cruise"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Louvre & Musée d'Orsay -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/louvre.jpg" class="card-img-top" alt="Louvre Museum">
+            <div class="card-body">
+              <h5 class="card-title">Art & Culture: Louvre & Musée d'Orsay</h5>
+              <p class="card-text">Masterpieces, Impressionists & history.</p>
+              <a href="#louvre" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="louvre">
+            <div class="card card-body">
+              <h6>Itinerary</h6>
+              <ul>
+                <li>Louvre Museum (Mona Lisa, Egyptian wing, Venus de Milo)</li>
+                <li>Musée d'Orsay: Impressionist & post-Impressionist art</li>
+                <li>Relax at Tuileries Garden</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/mona_lisa.jpg" class="place-img w-100" alt="Mona Lisa"></div>
+                <div class="col-6"><img src="images/orsay.jpg" class="place-img w-100" alt="Musee d'Orsay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Montmartre & Sacré-Cœur -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/montmartre.jpg" class="card-img-top" alt="Montmartre">
+            <div class="card-body">
+              <h5 class="card-title">Montmartre & Sacré-Cœur</h5>
+              <p class="card-text">Bohemian streets & breathtaking views.</p>
+              <a href="#montmartre" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="montmartre">
+            <div class="card card-body">
+              <h6>Itinerary</h6>
+              <ul>
+                <li>Walk through Montmartre artists’ square</li>
+                <li>Visit Basilica of Sacré-Cœur</li>
+                <li>Enjoy Parisian cafés & sunset view</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/sacre_coeur.jpg" class="place-img w-100" alt="Sacré-Cœur"></div>
+                <div class="col-6"><img src="images/montmartre_art.jpg" class="place-img w-100" alt="Montmartre Streets"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Versailles Day Trip -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/versailles.jpg" class="card-img-top" alt="Palace of Versailles">
+            <div class="card-body">
+              <h5 class="card-title">Versailles Day Trip</h5>
+              <p class="card-text">Royal palace, gardens & history.</p>
+              <a href="#versailles" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="versailles">
+            <div class="card card-body">
+              <h6>Itinerary</h6>
+              <ul>
+                <li>Palace of Versailles tour</li>
+                <li>Hall of Mirrors & royal apartments</li>
+                <li>Gardens & fountains show (seasonal)</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/versailles_garden.jpg" class="place-img w-100" alt="Versailles Gardens"></div>
+                <div class="col-6"><img src="images/versailles_hall.webp" class="place-img w-100" alt="Hall of Mirrors"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-dark text-center py-3">
+    <p>&copy; 2025 TravelMate. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

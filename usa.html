@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelMate - USA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="packages.css"/>
+  <style>
+    .place-img { height: 160px; object-fit: cover; border-radius: 8px; }
+    .package-card { margin-bottom: 30px; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🌍 TravelMate</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active" href="packages.html">Packages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="india.html">India</a></li>
+              <li><a class="dropdown-item" href="switzerland.html">Switzerland</a></li>
+              <li><a class="dropdown-item" href="maldives.html">Maldives</a></li>
+              <li><a class="dropdown-item" href="dubai.html">Dubai</a></li>
+              <li><a class="dropdown-item" href="thailand.html">Thailand</a></li>
+              <li><a class="dropdown-item" href="singapore.html">Singapore</a></li>
+              <li><a class="dropdown-item" href="paris.html">Paris</a></li>
+              <li><a class="dropdown-item" href="italy.html">Italy</a></li>
+              <li><a class="dropdown-item" href="london.html">London</a></li>
+              <li><a class="dropdown-item" href="usa.html">USA</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="packages-hero text-white text-center d-flex align-items-center"
+          style="background-image:url('images/usa_hero.jpg');">
+    <div class="container">
+      <h1 class="display-4">Discover USA</h1>
+      <p class="lead">New York, Los Angeles, Grand Canyon & more.</p>
+    </div>
+  </header>
+
+  <!-- USA Packages -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- New York -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/newyork.jpg" class="card-img-top" alt="New York">
+            <div class="card-body">
+              <h5 class="card-title">New York City (2 Days)</h5>
+              <p class="card-text">Statue of Liberty, Times Square & Central Park.</p>
+              <a href="#newyork" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="newyork">
+            <div class="card card-body">
+              <h6>Itinerary</h6>
+              <ul>
+                <li>Statue of Liberty & Ellis Island</li>
+                <li>Times Square & Broadway show</li>
+                <li>Central Park & Empire State Building</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/statueofliberty.jpg" class="place-img w-100" alt="Statue of Liberty"></div>
+                <div class="col-6"><img src="images/timessquare.jpg" class="place-img w-100" alt="Times Square"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Los Angeles -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/losangeles.jpg" class="card-img-top" alt="Los Angeles">
+            <div class="card-body">
+              <h5 class="card-title">Los Angeles (2 Days)</h5>
+              <p class="card-text">Hollywood, Beverly Hills & Santa Monica.</p>
+              <a href="#la" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="la">
+            <div class="card card-body">
+              <h6>Itinerary</h6>
+              <ul>
+                <li>Hollywood Walk of Fame & Hollywood Sign</li>
+                <li>Beverly Hills & Rodeo Drive</li>
+                <li>Santa Monica Pier & Venice Beach</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/hollywood.jpg" class="place-img w-100" alt="Hollywood"></div>
+                <div class="col-6"><img src="images/santamonica.jpg" class="place-img w-100" alt="Santa Monica"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grand Canyon -->
+        <div class="col-md-4">
+          <div class="card package-card">
+            <img src="images/grandcanyon.jpg" class="card-img-top" alt="Grand Canyon">
+            <div class="card-body">
+              <h5 class="card-title">Grand Canyon (1 Day)</h5>
+              <p class="card-text">Natural wonder & breathtaking views.</p>
+              <a href="#grandcanyon" class="btn btn-primary" data-bs-toggle="collapse">View Plan</a>
+            </div>
+          </div>
+          <div class="collapse mt-3" id="grandcanyon">
+            <div class="card card-body">
+              <h6>Itinerary</h6>
+              <ul>
+                <li>South Rim viewpoints</li>
+                <li>Helicopter ride over the canyon</li>
+                <li>Sunset at Desert View</li>
+              </ul>
+              <div class="row g-2">
+                <div class="col-6"><img src="images/canyon_view.jpg" class="place-img w-100" alt="Canyon View"></div>
+                <div class="col-6"><img src="images/canyon_sunset.jpg" class="place-img w-100" alt="Grand Canyon Sunset"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div><!-- /row -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-dark text-center py-3">
+    <p>&copy; 2025 TravelMate. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

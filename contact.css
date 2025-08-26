@@ -46,7 +46,7 @@ header p {
 .contact-section {
   background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
   padding: 40px;
-  border-radius: 12px;
+
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
