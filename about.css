@@ -313,3 +313,9 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+/* Disable dropdown on mobile */
+@media (max-width: 767.98px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: none !important; /* don't show dropdown on hover/tap */
+  }
+}

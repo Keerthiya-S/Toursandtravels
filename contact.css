@@ -153,3 +153,9 @@ footer {
   position: relative;
   z-index: 2; /* keep content above overlay */
 }
+/* Disable dropdown on mobile */
+@media (max-width: 767.98px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: none !important; /* don't show dropdown on hover/tap */
+  }
+}

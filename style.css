@@ -68,6 +68,17 @@
 .package-card:hover {
   transform: translateY(-10px);
 }
+/* Overlay hover effect */
+.bg-light {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.bg-light:hover {
+  transform: scale(1.05); /* smooth zoom */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35); /* creative glow */
+  background: rgba(255, 255, 255, 0.9); /* make it brighter */
+}
+
 /* Booking Section with Background Image */
 .booking-section {
   background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
@@ -131,6 +142,13 @@ footer {
   color: black;
   padding: 20px 0;
 }
+/* Disable dropdown on mobile */
+@media (max-width: 767.98px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: none !important; /* don't show dropdown on hover/tap */
+  }
+}
+
 /* .kenburns-top-right {
 	-webkit-animation: kenburns-top-right 5s ease-out both;
 	        animation: kenburns-top-right 5s ease-out both;
